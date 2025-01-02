@@ -1,0 +1,17 @@
+header {
+ width: 100vW;
+}
+
+nav {
+ width: 100%;
+ height: var(--navbar-height);
+ display: flex;
+ justify-content: space-between;
+ padding: 0 1rem;
+ background-color: var(--primary-color-4);
+}
+
+.navItems {
+ display: flex;
+ gap: 2rem;
+}

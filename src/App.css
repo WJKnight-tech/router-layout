@@ -10,5 +10,41 @@
 body {
   height: 100vh;
   width: 100vw;
+}
+
+:root {
+  --primary-color-1: #FF4100;
+  --primary-color-2: #EB3C00;
+  --primary-color-3: #BD3000;
+  --primary-color-4: #922500;
+  --primary-color-5: #5F1800;
+  --secondary-color-1: #00B6C7;
+  --secondary-color-2: #00838F;
+  --secondary-color-3: #006973;
+  --secondary-color-4: #005159;
+  --secondary-color-5: #00353A;
+  --tertiary-color-1: #38E900;
+  --tertiary-color-2: #30C700;
+  --tertiary-color-3: #27A100;
+  --tertiary-color-4: #1E7C00;
+  --tertiary-color-5: #135000;
+  --page-height: 92vh;
+  --navbar-height: calc(100vh - var(--page-height));
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: var(--page-height);
   display: flex;
+  justify-content: center;
+  align-items: center;
 }

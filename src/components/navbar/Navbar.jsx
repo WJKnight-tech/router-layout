@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import NavItem from "./NavItem"
 import { navItems } from "../../api/navdb"
+import styles from "./Navbar.module.css"
 
 const Navbar = () => {
  return (
@@ -9,7 +10,7 @@ const Navbar = () => {
     <div>
      <Link>Logo</Link>
     </div>
-    <ul>
+    <ul className={styles.navItems}>
      {navItems.map((navItem) => {
       return <NavItem key={navItem.id} {...navItem} />
      })
