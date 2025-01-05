@@ -8,7 +8,7 @@ const Navbar = () => {
   <header>
    <nav>
     <div>
-     <Link>Logo</Link>
+     <Link className={styles.logo}>Logo</Link>
     </div>
     <ul className={styles.navItems}>
      {navItems.map((navItem) => {
