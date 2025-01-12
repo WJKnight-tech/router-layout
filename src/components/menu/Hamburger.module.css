@@ -1,6 +1,6 @@
 .hamburgerMenu {
  padding: 0%;
- display: flex;
+ display: none;
  flex-direction: column;
  justify-content: space-between;
  height: var(--hamburger-height);
@@ -32,4 +32,13 @@
  transform: rotate(calc(var(--angle-x) * -1));
  translate: 0 calc(var(--bar-height) / -2);
  width: var(--x-bar)
+}
+
+/* mobile */
+@media (max-width: 650px) {
+
+ .hamburgerMenu {
+  display: flex;
+ }
+
 }

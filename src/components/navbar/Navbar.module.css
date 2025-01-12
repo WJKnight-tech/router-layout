@@ -9,6 +9,7 @@ nav {
  justify-content: space-between;
  padding: 0 1rem;
  background-color: var(--primary-color-4);
+ position: absolute;
 }
 
 .logo {
@@ -36,7 +37,7 @@ nav {
 
 .navItems a::before {
  content: '';
- position: absolute;
+ position: relative;
  top: 105%;
  left: 0;
  width: 0;
@@ -57,4 +58,23 @@ nav {
 .navItems .activated:hover::before {
  /* background: #fff; */
  width: 0%;
+}
+
+@media (max-width: 650px) {
+ .navItems {
+  flex-direction: column;
+  position: absolute;
+  top: var(--navbar-height);
+  right: 0;
+  background-color: var(--primary-color-4);
+  width: 40vw;
+  height: var(--page-height);
+  transition: var(--animation-timing);
+  align-items: center;
+ }
+
+ .closeModal {
+  position: absolute;
+  right: -40vw;
+ }
 }

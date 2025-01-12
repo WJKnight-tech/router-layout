@@ -31,7 +31,7 @@ body {
   --page-height: 92vh;
   --navbar-height: calc(100vh - var(--page-height));
   --hamburger-color: #000;
-  --hamburger-height: calc(var(--navbar-height) * .8);
+  --hamburger-height: calc(var(--navbar-height) * .6);
   --hamburger-width: calc(var(--hamburger-height) * 1.8);
   --bar-width: calc(var(--hamburger-height) * 1.8);
   --bar-height: calc(var(--hamburger-height) / 5);

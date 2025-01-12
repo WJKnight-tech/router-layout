@@ -19,7 +19,7 @@ const Navbar = () => {
     <div >
      <Link className={styles.logo}>Logo</Link>
     </div>
-    <ul className={styles.navItems}>
+    <ul className={isOpen ? `${styles.navItems}` : `${styles.navItems} ${styles.closeModal}`}>
      {navItems.map((navItem) => {
       return <NavItem key={navItem.id} {...navItem} />
      })
