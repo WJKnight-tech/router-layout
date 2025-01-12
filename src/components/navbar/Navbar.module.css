@@ -16,6 +16,8 @@ nav {
  height: 100%;
  color: #1d1d1d;
  text-shadow: 0.1rem 0.1rem var(--primary-color-1);
+ line-height: var(--navbar-height);
+
 }
 
 

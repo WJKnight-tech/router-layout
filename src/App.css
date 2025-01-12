@@ -30,6 +30,15 @@ body {
   --tertiary-color-5: #135000;
   --page-height: 92vh;
   --navbar-height: calc(100vh - var(--page-height));
+  --hamburger-color: #000;
+  --hamburger-height: calc(var(--navbar-height) * .8);
+  --hamburger-width: calc(var(--hamburger-height) * 1.8);
+  --bar-width: calc(var(--hamburger-height) * 1.8);
+  --bar-height: calc(var(--hamburger-height) / 5);
+  --transform-menu-origin: right;
+  --animation-timing: all ease-in-out 0.75s;
+  --angle-x: atan(calc(1/ 1.8));
+  --x-bar: calc(var(--hamburger-height)/ sin(var(--angle-x)));
 }
 
 ol,

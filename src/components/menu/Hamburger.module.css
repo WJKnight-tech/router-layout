@@ -1,0 +1,35 @@
+.hamburgerMenu {
+ padding: 0%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ height: var(--hamburger-height);
+ align-self: center;
+ cursor: pointer;
+}
+
+.hamburgerMenu span {
+ width: var(--bar-width);
+ height: var(--bar-height);
+ background-color: var(--hamburger-color);
+ transform-origin: var(--transform-menu-origin);
+ border-radius: 999px;
+ transition: var(--animation-timing);
+}
+
+.hamburgerMenu.xMenu span:nth-child(2) {
+ align-self: center;
+ width: 0;
+}
+
+.hamburgerMenu.xMenu span:nth-child(3) {
+ transform: rotate(var(--angle-x));
+ translate: 0 calc(var(--bar-height) / 2);
+ width: var(--x-bar)
+}
+
+.hamburgerMenu.xMenu span:nth-child(1) {
+ transform: rotate(calc(var(--angle-x) * -1));
+ translate: 0 calc(var(--bar-height) / -2);
+ width: var(--x-bar)
+}

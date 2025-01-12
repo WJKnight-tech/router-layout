@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 import NavItem from "./NavItem"
 import { navItems } from "../../api/navdb"
 import styles from "./Navbar.module.css"
+import { Hamburger } from "../menu"
+
+// const menu = false
 
 const Navbar = () => {
+ const [isOpen, setIsOpen] = useState(false)
+ const handleModal = () => {
+  setIsOpen(!isOpen)
+ }
+
  return (
   <header>
    <nav>
-    <div>
+    <div >
      <Link className={styles.logo}>Logo</Link>
     </div>
     <ul className={styles.navItems}>
@@ -16,6 +25,7 @@ const Navbar = () => {
      })
      }
     </ul>
+    <Hamburger menu={isOpen} onClick={() => { handleModal() }} />
    </nav>
   </header>
  )
